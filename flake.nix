@@ -44,6 +44,7 @@
         packages = {
           # Runnable with 'nix run .'
           default = makeNixvim ./default;
+
           nvim-latex = makeNixvim ./latex;
           nvim-scala = makeNixvim ./scala;
         };
