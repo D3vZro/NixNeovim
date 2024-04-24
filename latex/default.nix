@@ -16,6 +16,5 @@
   };
 
   extraConfigLua = ''
-    vim.g.vimtex_syntax_enable = 0
   '';
 }

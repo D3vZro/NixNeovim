@@ -33,6 +33,8 @@
     set.relativenumber = true
     set.shiftwidth = 2
     set.smartcase = true
+
+    vim.g.vimtex_syntax_enable = 0
   '';
 
   colorschemes.nord = {
