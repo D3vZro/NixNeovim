@@ -48,7 +48,6 @@
     cursorline.enable = true;
     gitgutter.enable = true;
     luasnip.enable = true;
-    nix.enable = true;
     surround.enable = true;
     which-key.enable = true;
 
