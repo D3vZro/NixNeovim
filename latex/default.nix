@@ -14,7 +14,4 @@
     lsp.servers.texlab.enable = true;
     vimtex.enable = true;
   };
-
-  extraConfigLua = ''
-  '';
 }
