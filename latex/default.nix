@@ -12,6 +12,9 @@
 
   plugins = {
     lsp.servers.texlab.enable = true;
-    vimtex.enable = true;
+    vimtex = {
+      enable = true;
+      texlivePackage = null;
+    };
   };
 }
