@@ -34,6 +34,10 @@
     set.shiftwidth = 2
     set.smartcase = true
 
+    set.title = true
+    set.titlelen = 0
+    set.titlestring = 'nvim'
+
     vim.g.vimtex_syntax_enabled = 0
   '';
 
