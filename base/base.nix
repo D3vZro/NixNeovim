@@ -38,6 +38,8 @@
     set.titlelen = 0
     set.titlestring = 'nvim'
 
+    set.foldenable = false
+
     vim.g.vimtex_syntax_enabled = 0
   '';
 
@@ -60,6 +62,7 @@
     treesitter = { 
       enable = true;
       indent = true;
+      folding = true;
       nixvimInjections = true;
     };
 
