@@ -129,26 +129,31 @@
 
     lualine = {
       enable = true;
-      globalstatus = true;
-      ignoreFocus = [ "NvimTree" ];
-      disabledFiletypes.statusline = [ "NvimTree" ];
 
-      sections = {
-        lualine_a = ["mode"];
-        lualine_b = ["branch" "diff"];
-        lualine_c = ["searchcount" "selectioncount"];
-        lualine_x = ["filetype"];
-        lualine_y = ["progress"];
-        lualine_z = ["location" ];
-      };
+      settings = {
+        options = {
+          disabled_filetypes.statusline = [ "NvimTree" ];
+          globalstatus = true;
+          ignoreFocus = [ "NvimTree" ];
+        };
 
-      tabline = {
-        lualine_a = ["hostname"];
-        lualine_b = ["windows"];
-        lualine_c = [];
-        lualine_x = [];
-        lualine_y = [];
-        lualine_z = ["tabs"];
+        sections = {
+          lualine_a = ["mode"];
+          lualine_b = ["branch" "diff"];
+          lualine_c = ["searchcount" "selectioncount"];
+          lualine_x = ["filetype"];
+          lualine_y = ["progress"];
+          lualine_z = ["location" ];
+        };
+
+        tabline = {
+          lualine_a = ["hostname"];
+          lualine_b = ["windows"];
+          lualine_c = [];
+          lualine_x = [];
+          lualine_y = [];
+          lualine_z = ["tabs"];
+        };
       };
     };
 
