@@ -60,6 +60,10 @@
     web-devicons.enable = true;
     which-key.enable = true;
 
+    leap = {
+      enable = true;
+    };
+
     indent-blankline = {
       enable = true;
 
@@ -78,10 +82,6 @@
             "TelescopePrompt"
             "TelescopeResults"
           ];
-        };
-
-        indent = {
-          char = "|";
         };
 
         scope = {
