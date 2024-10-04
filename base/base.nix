@@ -56,7 +56,8 @@
     cursorline.enable = true;
     gitgutter.enable = true;
     luasnip.enable = true;
-    surround.enable = true;
+    vim-surround.enable = true;
+    web-devicons.enable = true;
     which-key.enable = true;
 
     treesitter = { 
