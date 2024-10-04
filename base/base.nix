@@ -60,6 +60,38 @@
     web-devicons.enable = true;
     which-key.enable = true;
 
+    indent-blankline = {
+      enable = true;
+
+      settings = {
+        exclude = {
+          buftypes = [
+            "terminal"
+            "quickfix"
+          ];
+
+          filetypes = [
+            ""
+            "checkhealth"
+            "help"
+            "lspinfo"
+            "TelescopePrompt"
+            "TelescopeResults"
+          ];
+        };
+
+        indent = {
+          char = "|";
+        };
+
+        scope = {
+          show_start = false;
+          show_exact_scope = true;
+          show_end = false;
+        };
+      };
+    };
+
     treesitter = { 
       enable = true;
       folding = true;
