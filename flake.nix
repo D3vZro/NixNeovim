@@ -48,6 +48,7 @@
           nvim-latex = makeNixvim ./latex;
           nvim-nix = makeNixvim ./nix;
           nvim-scala = makeNixvim ./scala;
+          nvim-cpp = makeNixvim ./cpp;
         };
       };
     };
