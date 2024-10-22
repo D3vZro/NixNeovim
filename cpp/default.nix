@@ -4,7 +4,15 @@
   ];
 
   plugins = {
-    lsp.servers.clangd.enable = true;
-    dap.enable = true;
+    clangd-extensions.enable = true;
+
+    lsp.servers.clangd = {
+      enable = true;
+      package = null;
+    };
+
+    dap = {
+      enable = true;
+    };
   };
 }
