@@ -42,13 +42,13 @@
         };
 
         packages = {
-          # Runnable with 'nix run .'
+            # Runnable with 'nix run .' or 'nix run github:D3vZro/NixNeovim'
           default = makeNixvim ./default;
 
-          nvim-latex = makeNixvim ./latex;
-          nvim-nix = makeNixvim ./nix;
-          nvim-scala = makeNixvim ./scala;
-          nvim-cpp = makeNixvim ./cpp;
+          latex = makeNixvim ./latex;
+          nix = makeNixvim ./nix;
+          scala = makeNixvim ./scala;
+          cpp = makeNixvim ./cpp;
         };
       };
     };
