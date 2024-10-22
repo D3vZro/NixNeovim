@@ -3,5 +3,8 @@
     ../base/base.nix
   ];
 
-  plugins.lsp.servers.metals.enable = true;
+  plugins.lsp.servers.metals = {
+    enable = true;
+    package = null;
+  };
 }
