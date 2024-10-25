@@ -8,7 +8,7 @@
 
     lsp.servers.nil-ls = {
       enable = true;
-      package = false;
+      package = null;
     };
   };
 }
