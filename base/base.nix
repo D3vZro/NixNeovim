@@ -1,8 +1,15 @@
+{ pkgs, ... }:
+
 {
   enableMan = false;
 
   globals.mapleader = " ";
   clipboard.register = "unnamedplus";
+
+  extraPackages = with pkgs; [
+    ripgrep
+    fd
+  ];
 
   autoCmd = [
     {
@@ -22,24 +29,22 @@
     }
   ];
 
+  opts = {
+    conceallevel = 1;
+    expandtab = true;
+    ignorecase = true;
+    mouse = null;
+    number = true;
+    relativenumber = true;
+    shiftwidth = 2;
+    smartcase = true;
+    title = true;
+    titlelen = 0;
+    titlestring = "nvim";
+    foldenable = false;
+  };
+
   extraConfigLua = ''
-    local set = vim.opt
-
-    set.conceallevel = 1
-    set.expandtab = true
-    set.ignorecase = true
-    set.mouse = nil
-    set.number = true
-    set.relativenumber = true
-    set.shiftwidth = 2
-    set.smartcase = true
-
-    set.title = true
-    set.titlelen = 0
-    set.titlestring = 'nvim'
-
-    set.foldenable = false
-
     vim.g.vimtex_syntax_enabled = 0
   '';
 
@@ -59,6 +64,12 @@
     vim-surround.enable = true;
     web-devicons.enable = true;
     which-key.enable = true;
+
+    # Single LSP plugins, the real config is below
+    lsp-format.enable = true;
+    lspkind.enable = true;
+    lsp-signature.enable = true;
+    lsp-lines.enable = true;
 
     leap = {
       enable = true;
@@ -101,6 +112,7 @@
 
     lsp = {
       enable = true;
+      inlayHints = true;
 
       keymaps = {
         diagnostic = {
