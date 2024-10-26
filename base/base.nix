@@ -68,7 +68,6 @@
     # Single LSP plugins, the real config is below
     lsp-format.enable = true;
     lspkind.enable = true;
-    lsp-signature.enable = true;
     lsp-lines.enable = true;
 
     leap = {
