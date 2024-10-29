@@ -16,3 +16,34 @@ The editors themselves may be bound into a devshell. Some examples can be found 
     - All specialized configs require their packages **explicitly**. You can do so in devshells.
 
 - Everything here is extremly opinionated
+
+## Plugins
+
+- `default`: The most basic config by simply importing `./base/base.nix` containing:
+
+    - auto-save
+    - cursorline
+    - gitgutter
+    - luasnip
+    - vim-surround
+    - web-devicons
+    - which-keys
+    - leap
+    - indent-blankline
+    - treesitter
+    - lsp and some depends (**Specific LSPs are not enabled**)
+        - lspkind
+        - lsp-lines
+    - cmp
+    - telescope
+    - lualine
+    - nvim-tree
+
+- `cpp`: Clangd-LSP and debugging with nvim-dap (WIP)
+
+- `latex`: Texlab-LSP and vimtex
+
+- `nix`: Nil-LSP and vim-nix
+
+- `scala`: Metals-LSP
+
