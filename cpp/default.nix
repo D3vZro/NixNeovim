@@ -11,6 +11,13 @@
 
       settings = {
         formatters_by_ft.cpp = [ "clang_format" ];
+
+        format_after_save = {
+          lsp_format = "fallback";
+          quiet = false;
+          stop_after_first = true;
+          timeout_ms = 1000;
+        };
       };
     };
 
