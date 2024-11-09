@@ -9,7 +9,7 @@
       package = null;
     };
 
-    lsp.servers.tailwind = {
+    lsp.servers.tailwindcss = {
       enable = true;
       package = null;
     };
