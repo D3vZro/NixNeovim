@@ -47,3 +47,5 @@ The editors themselves may be bound into a devshell. Some examples can be found 
 
 - `scala`: Metals-LSP
 
+- `svelte`: LSPs for svelte and tailwindcss
+
