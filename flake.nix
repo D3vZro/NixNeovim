@@ -49,6 +49,7 @@
           nix = makeNixvim ./nix;
           scala = makeNixvim ./scala;
           cpp = makeNixvim ./cpp;
+          ts = makeNixvim ./ts;
         };
       };
     };
