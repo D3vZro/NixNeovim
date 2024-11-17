@@ -45,10 +45,11 @@
             # Runnable with 'nix run .' or 'nix run github:D3vZro/NixNeovim'
           default = makeNixvim ./default;
 
+          cpp = makeNixvim ./cpp;
           latex = makeNixvim ./latex;
           nix = makeNixvim ./nix;
+          python = makeNixvim ./python;
           scala = makeNixvim ./scala;
-          cpp = makeNixvim ./cpp;
           svelte = makeNixvim ./svelte;
         };
       };
