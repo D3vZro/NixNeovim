@@ -5,9 +5,9 @@
 
   autoCmd = [
     {
-      event = [ "BufEnter" "BufWinEnter" ];
+      event = [ "BufRead" "BufNewFile" ];
       pattern = [ "*.svelte" ];
-      callback = "TSEnable highlight";
+      callback = { __raw = "function() vim.cmd(\"TSEnable highlight\") end"; };
     }
   ];
 
