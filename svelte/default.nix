@@ -4,14 +4,21 @@
   ];
 
   plugins = {
-    lsp.servers.svelte = {
-      enable = true;
-      package = null;
-    };
+    lsp.servers {
+      ts_ls = {
+        enable = true;
+        package = null;
+      };
 
-    lsp.servers.tailwindcss = {
-      enable = true;
-      package = null;
+      svelte = {
+        enable = true;
+        package = null;
+      };
+
+      tailwindcss = {
+        enable = true;
+        package = null;
+      };
     };
   };
 }
