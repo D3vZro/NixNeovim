@@ -6,7 +6,7 @@
   plugins = {
     nix.enable = true;
 
-    lsp.servers.nil-ls = {
+    lsp.servers.nil_ls = {
       enable = true;
       package = null;
     };
