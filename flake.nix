@@ -46,6 +46,7 @@
           default = makeNixvim ./default;
 
           cpp = makeNixvim ./cpp;
+          haskell = makeNixvim ./haskell;
           latex = makeNixvim ./latex;
           nix = makeNixvim ./nix;
           python = makeNixvim ./python;
