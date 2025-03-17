@@ -3,8 +3,9 @@
     ../base/base.nix
   ];
 
-  plugins.lsp.server.hls = {
+  plugins.lsp.servers.hls = {
     enable = true;
     package = null;
+    installGhc = false;
   };
 }
