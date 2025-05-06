@@ -48,6 +48,7 @@
           cpp = makeNixvim ./cpp;
           haskell = makeNixvim ./haskell;
           latex = makeNixvim ./latex;
+          lean = makeNixvim ./lean;
           nix = makeNixvim ./nix;
           python = makeNixvim ./python;
           scala = makeNixvim ./scala;
