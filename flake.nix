@@ -53,6 +53,7 @@
           python = makeNixvim ./python;
           scala = makeNixvim ./scala;
           svelte = makeNixvim ./svelte;
+          typst = makeNixvim ./typst;
         };
       };
     };
