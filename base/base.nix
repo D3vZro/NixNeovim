@@ -4,6 +4,7 @@
   enableMan = false;
 
   globals.mapleader = " ";
+  globals.maplocalleader = ",";
   clipboard.register = "unnamedplus";
 
   extraPackages = with pkgs; [
@@ -202,10 +203,9 @@
 
     nvim-tree = {
       enable = true;
-      hijackCursor = true;
       openOnSetup = true;
 
-      extraOptions = {
+      settings = {
         view = {
           adaptive_size = true;
           side = "right";
