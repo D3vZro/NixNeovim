@@ -216,19 +216,11 @@
       };
     };
 
+    /*
+    # TODO
     presence-nvim = {
       enable = true;
-      editingText = "Editing";
-      readingText = "Reading papers";
-      fileExplorerText = "Browsing files";
-      gitCommitText = "Committing";
-      neovimImageText = "Our lord and saviour";
-      pluginManagerText = "Managing plugins";
-      workspaceText = "Drinking coffee";
-
-      extraOptions = {
-        buttons = false;
-      };
     };
+    */
   };
 }
