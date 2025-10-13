@@ -8,8 +8,12 @@
       enable = true;
     };
 
-    typst-preview = {
+    typst-vim = {
       enable = true;
+
+      settings = {
+        pdf_viewer = "zathura";
+      };
     };
   };
 }
