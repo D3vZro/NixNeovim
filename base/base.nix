@@ -58,12 +58,25 @@
   };
 
   plugins = {
+    # Auto-saving on exiting insert mode
     auto-save.enable = true;
+
+    # Highlighting cursor position and repeating words
     cursorline.enable = true;
+
+    # Git diff in editing mode
     gitgutter.enable = true;
+    
+    # Snippet engine
     luasnip.enable = true;
+
+    # Helper for brackets
     vim-surround.enable = true;
+
+    # Dependency for icons
     web-devicons.enable = true;
+
+    # Helper for keybinds
     which-key.enable = true;
 
     # Single LSP plugins, the real config is below
@@ -71,10 +84,12 @@
     lspkind.enable = true;
     lsp-lines.enable = true;
 
+    # Jump in normal mode
     leap = {
       enable = true;
     };
 
+    # Indentation guides
     indent-blankline = {
       enable = true;
 
@@ -103,6 +118,7 @@
       };
     };
 
+    # Syntax highlighting
     treesitter = { 
       enable = true;
       folding = true;
@@ -110,6 +126,7 @@
       settings.indent.enable = true;
     };
 
+    # Language server entry point
     lsp = {
       enable = true;
 
@@ -129,6 +146,7 @@
       };
     };
 
+    # Suggestions
     cmp = {
       enable = true;
 
@@ -152,13 +170,14 @@
         };
 
         sources = [
-          { name = "buffer"; }
           { name = "nvim_lsp"; }
+          { name = "buffer"; }
           { name = "path"; }
         ];
       };
     };
 
+    # Searcher
     telescope = {
       enable = true;
       extensions.fzf-native.enable = true;
@@ -171,6 +190,7 @@
       };
     };
 
+    # Pretty status bars
     lualine = {
       enable = true;
 
@@ -201,6 +221,7 @@
       };
     };
 
+    # File browser
     nvim-tree = {
       enable = true;
       openOnSetup = true;
