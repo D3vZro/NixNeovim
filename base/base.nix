@@ -121,7 +121,7 @@
     # Syntax highlighting
     treesitter = { 
       enable = true;
-      folding = true;
+      folding.enable = true;
       nixvimInjections = true;
       settings.indent.enable = true;
     };
