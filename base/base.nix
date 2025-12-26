@@ -237,11 +237,12 @@
       };
     };
 
-    /*
-    # TODO
-    presence-nvim = {
+    presence = {
       enable = true;
+
+      settings = {
+
+      };
     };
-    */
   };
 }
