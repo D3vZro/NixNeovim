@@ -241,7 +241,7 @@
       enable = true;
 
       settings = {
-
+        buttons = false;
       };
     };
   };
