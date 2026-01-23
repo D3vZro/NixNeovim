@@ -82,7 +82,6 @@
     # Single LSP plugins, the real config is below
     # lsp-format.enable = true;
     lspkind.enable = true;
-    lsp-lines.enable = true;
 
     # Jump in normal mode
     leap = {
