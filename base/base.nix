@@ -82,6 +82,7 @@
     # Single LSP plugins, the real config is below
     # lsp-format.enable = true;
     lspkind.enable = true;
+    tiny-inline-diagnostic.enable = true;
 
     # Jump in normal mode
     leap = {
