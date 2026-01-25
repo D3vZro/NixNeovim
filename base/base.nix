@@ -82,7 +82,6 @@
     # Single LSP plugins, the real config is below
     # lsp-format.enable = true;
     lspkind.enable = true;
-    tiny-inline-diagnostic.enable = true;
 
     # Jump in normal mode
     leap = {
@@ -123,7 +122,6 @@
       enable = true;
       folding.enable = true;
       nixvimInjections = true;
-      settings.indent.enable = true;
     };
 
     # Language server entry point
@@ -205,7 +203,7 @@
           lualine_a = ["mode"];
           lualine_b = ["branch" "diff"];
           lualine_c = ["searchcount" "selectioncount"];
-          lualine_x = ["filetype"];
+          lualine_x = ["filetype" "lsp_status" "diagnostics"];
           lualine_y = ["progress"];
           lualine_z = ["location" ];
         };
