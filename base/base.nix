@@ -28,6 +28,10 @@
       key = "<C-e>";
       action = ":NvimTreeToggle<CR>";
     }
+    {
+      key = "gK";
+      action = ":vim.diagnostic.config({ virtual_lines = not vim.diagnostic.config().virtual_lines })";
+    }
   ];
 
   opts = {
