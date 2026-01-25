@@ -30,7 +30,7 @@
     }
     {
       key = "gK";
-      action = ":vim.diagnostic.config({ virtual_lines = not vim.diagnostic.config().virtual_lines })";
+      action = { __raw = "function() vim.diagnostic.config({ virtual_lines = not vim.diagnostic.config().virtual_lines }) end"; };
     }
   ];
 
