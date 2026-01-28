@@ -42,7 +42,7 @@
         };
 
         packages = {
-            # Runnable with 'nix run .' or 'nix run github:D3vZro/NixNeovim'
+          # Runnable with 'nix run .' or 'nix run github:D3vZro/NixNeovim'
           default = makeNixvim ./default;
 
           cpp = makeNixvim ./cpp;
@@ -51,6 +51,7 @@
           lean = makeNixvim ./lean;
           nix = makeNixvim ./nix;
           python = makeNixvim ./python;
+          rust = makeNixvim ./rust;
           scala = makeNixvim ./scala;
           svelte = makeNixvim ./svelte;
           typst = makeNixvim ./typst;
