@@ -9,6 +9,7 @@
 
   outputs = {
     nixvim,
+    nixpkgs,
     flake-parts,
     ...
   } @ inputs:
@@ -27,6 +28,11 @@
       }: let
         nixvimLib = nixvim.lib.${system};
         nixvim' = nixvim.legacyPackages.${system};
+        pkgs = import nixpkgs { 
+          inherit system;
+          config.allowUnfree = true;
+        };
+
         makeNixvim = a : nixvim'.makeNixvimWithModule {
           inherit pkgs;
           module = import a;
