@@ -143,7 +143,7 @@
           "gr" = "references";
           "gd" = "definition";
           "gi" = "implementation";
-          "gD" = "type_definition";
+          "gt" = "type_definition";
         };
       };
     };
