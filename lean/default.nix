@@ -6,7 +6,7 @@
   lsp.keymaps = [
     {
       key = "<leader>R";
-      action = "require('lean.lsp').restart_file()";
+      action =  { __raw = "require('lean.lsp').restart_file()"; };
     }
   ];
 
