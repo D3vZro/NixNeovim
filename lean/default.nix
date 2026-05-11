@@ -5,7 +5,7 @@
 
   lsp.keymaps = [
     {
-      key = "<leader>gr";
+      key = "<C-c>";
       action =  { __raw = "require('lean.lsp').restart_file()"; };
     }
   ];
